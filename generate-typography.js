@@ -4,7 +4,7 @@ var FeedParser = require('feedparser')
 var request = require('request')
 var each = require('each')
 
-var filepath = './public/slides/typo-inspiration.md'
+var filepath = './public/slides/typography-inspiration.md'
 
 var file = fs.createWriteStream(filepath )
 

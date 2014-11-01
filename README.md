@@ -22,6 +22,6 @@ Markdown-based teaching materials repository with slideshow support.
 
 You can also automatically generate the content. By running
 
-	node generate-typoinspiration.js
+	node generate-typography.js
 
-the _public/slides/typo-inspiration.md_ page is generated containg eye candy from major typography blogs.
+the _public/slides/typography-inspiration.md_ page is generated containg eye candy from major typography blogs.
