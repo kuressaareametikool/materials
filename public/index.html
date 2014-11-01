@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="wrapper"></div>
+    
+    <script type="text/html" id="index">
+
+    <header>
+    <h1>Slides</h1>
+    </header>
+    <div class="content">
+    {{{content}}}  
+    </div>     
+
+    </script>
+    
+    <script type="text/html" id="slides">
+
+    <header>
+    <h1><a href="/">Slides</a> &rsaquo; {{slide}} <a class="play" href="#/{{slide}}/slideshow">▶</a> </h1>
+    </header>     
+
+    <div class="content">
+      {{{content}}}  
+    </div>
+    
+    </script>
+    
+    <script type="text/html" id="slideshow">
+
+    <a class="stop" href="#/{{slide}}">◼</a>
+    <div id="impress" data-transition-duration="0">
+    {{#slides}}
+    <div class="step" data-x="{{x}}" data-y="0">
+      <div class="content">
+      {{{slide}}}
+      </div>
+    </div>
+    {{/slides}}
+    </div>
+    
+    </script>
+
+  <script src="/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="/vendor/mustache/mustache.js"></script>
+  <script src="/vendor/marked/lib/marked.js"></script>
+  <script src="/vendor/underscore/underscore-min.js"></script>
+  <script src="/vendor/backbone/backbone-min.js"></script>
+  <script src="/vendor/impress/js/impress.js"></script>
+  <script src="/js/client.js"></script>
+
+</body>
+</html>

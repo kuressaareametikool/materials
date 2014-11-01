@@ -1,0 +1,124 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+@font-face {
+  font-family: 'KelsonSans';
+  src: url("../fonts/kelson_sans_regular-wf.eot");
+  src: url("../fonts/kelson_sans_regular-wf.eot?#iefix") format("embedded-opentype"), url("../fonts/kelson_sans_regular-wf.woff") format("woff"), url("../fonts/kelson_sans_regular-wf.ttf") format("truetype"), url("../fonts/kelson_sans_regular-wf.svg#kelson_sansregular") format("svg");
+  font-style: normal;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #333;
+}
+a, a:link, a:visited, a:hover {
+  color: #333;
+  font-weight: normal;
+}
+header {
+  padding: 30px 0 40px 30px;
+  background: #222;
+}
+header a, header a:link, header a:active, header a:hover {
+  color: white;
+}
+h1, h2, h3, h4 {
+  font-family: KelsonSans, sans-serif;
+  font-weight: normal;
+  color: black;
+}
+header h1 {
+  font-size: 32px;
+  letter-spacing: -0.025em;
+  margin: 0;
+  color: #ccc;
+  line-height: 0;
+}
+h1 {
+  font-size: 2.2em;
+  margin-top: 1.5em;
+}
+h1:first-child, h2:first-child, h3:first-child  {
+  margin-top: 0.5em;
+}
+h2 {
+  font-size: 1.7em;
+  margin-top: 1.5em;
+}
+h3 {
+  font-size: 1.3em;
+  margin-top: 1.5em;
+}
+h4 {
+  margin-top: 1em;
+}
+header a,
+header a:link,
+header a:active,
+header a:hover  {
+  color: #fff !important;
+  text-decoration: none;
+}
+.content {
+  padding: 1.5em;
+}
+img {
+  max-width: 600px;
+}
+
+.play, .stop {
+  font-size: 20px;
+  float: right;
+  text-decoration: none;
+}
+.play {
+  padding-right: 30px;  
+}
+.stop {
+  padding-top: 30px;  
+  padding-right: 30px;  
+  opacity: 0.5;
+  z-index: 1000;
+}
+#impress {
+  font-size: 2.5em;
+  line-height: 2em;
+}
+#impress p, #impress li {
+  font-size: 0.65em;
+  line-height: 1.25em;
+  margin-bottom: 1em;
+}
+#impress p a {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+#impress br {
+  margin-bottom: 2em;
+}
+#impress ul {
+  text-align: left;
+}
+#impress .step {
+  width: 1000px;
+  height: 700px;
+  text-align: center;
+  background: white;
+  vertical-align: middle;
+  display: table;
+}
+#impress .step .content {
+  vertical-align: middle;
+  display: table-cell;
+}
+#impress img {
+  min-width: 90%;
+}
