@@ -10,7 +10,7 @@ var backboneRouter = Backbone.Router.extend({
     
     $('body').removeAttr('class').removeAttr('style')
     
-    $.get('/slides/index.md', function(data) {
+    $.get('./slides/index.md', function(data) {
 
     	var content = marked(data, {breaks: true})
         .replace(/href=\"/g, 'href=\"#/')
@@ -27,7 +27,7 @@ var backboneRouter = Backbone.Router.extend({
     
     $('body').removeAttr('class').removeAttr('style')
 
-    $.get('/slides/' + slide, function(data) {
+    $.get('./slides/' + slide, function(data) {
 
       var y = 0;
       
@@ -44,7 +44,7 @@ var backboneRouter = Backbone.Router.extend({
 
   slideShow: function(slide) {
       
-    $.get('/slides/' + slide, function(data) {
+    $.get('./slides/' + slide, function(data) {
       
       var slides = []
       var x = 0
